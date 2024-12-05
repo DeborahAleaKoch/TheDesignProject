@@ -90,6 +90,25 @@ header nav p {
   margin-bottom: 35rem;
 }
 
+.flying-guy {
+  position: relative;
+  z-index: 1;
+  top: -70rem;
+  left: 65rem;
+  width: 50%;
+
+  animation: flying 0.8s linear infinite alternate;
+}
+
+@keyframes flying {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(35px);
+  }
+}
+
 /* # Header Section with H1 an p */
 .hero-section-position {
   width: 50rem;
