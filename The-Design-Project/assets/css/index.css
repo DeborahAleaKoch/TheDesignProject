@@ -314,3 +314,12 @@ footer article {
   border: none;
   margin-bottom: 15rem;
 }
+
+.lastEmoji {
+  display: flex;
+}
+
+.emoSize {
+  width: 2%;
+  height: 1%;
+}
