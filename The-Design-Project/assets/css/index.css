@@ -186,6 +186,7 @@ h4 {
   font-family: var(--robo-B);
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  /* margin-left: -32px; */
 }
 
 .grid-box {
@@ -203,10 +204,47 @@ h4 {
   margin-bottom: 7.2rem;
 }
 
-/* .grid-box-child-size:nth-of-type(1):before{
-    content: url("../img/title02.svg");
-    
-} */
+/* #Icons :before text */
+
+.grid-box-child-size:nth-child(1) h4:before {
+  content: url("../img/title02.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: left;
+  margin-left: -35px;
+  margin-right: 7px;
+}
+
+.grid-box-child-size:nth-child(2) h4:before {
+  content: url("../img/title04.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: left;
+  margin-left: -35px;
+  margin-right: 7px;
+}
+
+.grid-box-child-size:nth-child(3) h4:before {
+  content: url("../img/title01.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: left;
+  margin-left: -35px;
+  margin-right: 7px;
+}
+
+.grid-box-child-size:nth-child(4) h4:before {
+  content: url("../img/title03.svg");
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-position: left;
+  margin-left: -35px;
+  margin-right: 7px;
+}
 
 .main-section {
   margin-bottom: 20rem;
@@ -266,11 +304,6 @@ h5 {
   margin-bottom: 1.8rem;
 }
 
-/* .grid-section div{
-    position: relative;
-    right: -4rem;
-} */
-
 .main-section {
   margin-bottom: 20rem;
 }
@@ -291,21 +324,26 @@ footer article {
 }
 
 .emailSub {
-  display: grid;
+  display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 #email {
-  width: 6.5rem;
-  padding: 1.5rem 20rem;
+  width: 30%;
+  /* background-color: antiquewhite; */
+  padding: 1em 1.5em;
   margin-bottom: 3rem;
   border: none;
   box-shadow: 10px 10px 133px 0px rgba(0, 0, 0, 0.264);
+  text-align: center;
+  font-size: 2rem;
 }
 
 .btn {
-  position: relative;
-  left: 8rem;
+  /* position: relative;
+  left: 8rem; */
   width: 25rem;
   height: 6rem;
   background-color: var(--a-button-col);
